@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us Form</title>
+</head>
+<style>
+  body{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #365486;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    
+  }
+  .container{
+    display: flex;
+    width: 1200px;
+    height: 650px;
+    background-color: #fff;
+    border-radius: 10px;
+    filter: drop-shadow(0px 1px 5px #737373);
+}
+.child_one{
+  display: flex;
+  width: 400px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 40px;
+  font-size: larger;
+}
+.child_one p{
+  color: rgb(131, 131, 131);
+}
+.child_two{
+  display: flex;
+  width: 800px;
+  
+}
+#first img{
+  width: 50px;
+}
+hr{
+  height: 80%;
+  text-align: center;
+}
+.contactUs{
+  width: 90%;
+  height: 90%;
+  margin:auto;
+}
+.contactUs h1{
+  font-size: 36px;
+  color: #7E2553;
+}
+.contactUs p {
+  color: rgb(131, 131, 131);;
+  font-size: 24px;
+  line-height: 36px;
+}
+#fill{
+  background-color: #eeeeee;
+  margin:10px auto;
+  display: inline-block;
+  position: relative;
+  width: 90%;
+  padding: 15px;
+  border: none;
+  font-size: larger;
+  border-radius: 5px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+input:focus{
+  border: none;
+  outline: none;
+}
+textarea{
+  resize: none;
+}
+textarea:focus{
+  outline: none;
+}
+button{
+  background-color: #7E2553;
+  padding: 18px 20px;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 50px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+</style>
+<body>
+  <div class="container">
+    <div class="child_one">
+      <div class="address" id="first">
+        <img src="/Project two/Images/maps-and-flags.png" alt="">
+       <p> Jogeshwari (east), <br>
+         Mumbai - 400 060</p>
+      </div>
+      <div class="phone" id="first">
+        <img src="/Project two/Images/phone-call.png" alt="">
+        <p>+91 - 9867-807-274</p>
+      </div>
+      <div class="email" id="first"> 
+        <img src="/Project two/Images/email.png" alt="">
+        <p>iprathmeshsangam@gmail.com</p>
+      </div>
+    </div>
+    <div class="child_two">
+     <div class="contactUs">
+      <h1>Send us a Message</h1>
+      <p>If you have any work from me or any type of queries to my tutorials, you can send me a message from here! it's my pleasure to help.</p>  
+      <div class="contactUsForm">
+        <form action="#">
+          <input type="text" name="Name" id="fill" placeholder="Enter your name"><br>
+          <input type="Email" name="email" id="fill" placeholder="Enter your Email"><br>
+          <textarea name="Message" id="fill" cols="20" rows="5"  placeholder="Enter your message" resize="none"></textarea><br>
+          <button type="submit">Send Now</button>
+        </form>
+      </div>
+    </div>
+    </div>
+  </div>
+</body>
+</html>
